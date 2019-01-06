@@ -1,6 +1,6 @@
 # Personal Porfolio
 
-This portfolio was created for myself, and as a place to showcase any and all work that has been created by me.
+A page to showcase all the work I've made.
 
 
 ### Extra
@@ -10,8 +10,6 @@ This portfolio was created for myself, and as a place to showcase any and all wo
 
 # Notice
 
-The photo below was taken on 12/18/18, and may be inaccurate. 
-This image will be updated throughout time as I continuously update my portfolio,
-but this is the last known update.
+This is a photo of the page taken on 1/6/2019, but may not be acurate 
 
 ![alt text](https://i.imgur.com/OgRIrbl.png)
