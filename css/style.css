@@ -14,8 +14,14 @@ body {
     display: table;
     width: 100%;
     margin: 0;
-    background-image: url(https://image.freepik.com/vector-gratis/fondo-borroso-colores-oscuros_1159-757.jpg);
+    background-image: url(https://i.imgur.com/uNQ5exz.jpg);
     background-size: cover;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 a {
@@ -58,6 +64,14 @@ h1 smallText {
     color: #fff;
     font-size: 28px;
     margin-top: 20px;
+}
+
+h1 copyright {
+    display: block;
+
+    color: #fff;
+    opacity: 0.2;
+    font-size: 15px;
 }
 
 #typed {
