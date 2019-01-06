@@ -1,160 +1,69 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway');
-@import url('https://fonts.googleapis.com/css?family=Oswald');
+/* Font Imports */
+@import url('https://fonts.googleapis.com/css?family=Thasadith');
+
+/* General Styling */
+
 body, html {
-    font-family: 'Oswald', sans-serif;
-    background-color: #eff4fa;
-    font-size: 18px;
-    position: relative;
+    font-family: 'Thasadith', sans-serif;
+    background-color: #eff4fa; /*  Background color must be the same as paint stroke color, otherwise these offset */
+    height: 100%;
     text-align: center;
+}
+
+body {
+    display: table;
+    width: 100%;
+    margin: 0;
+    background-image: url(https://image.freepik.com/vector-gratis/fondo-borroso-colores-oscuros_1159-757.jpg);
+    background-size: cover;
 }
 
 a {
     text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 35px;
+    transition: 100ms height ease-in-out, 100ms background ease-in-out;
 }
+
+a:hover {
+    color: #DD2D4A;
+    transition: 100ms height ease-in-out, 100ms background ease-in-out;
+}
+
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+
 
 h1 {
-    color: #ffffff;
-    font-weight: bold;
-
-}
-
-p {
-    font-size: 20px;
-    color: #ffffff;
-}
-
-.section {
-    text-align: center;
-}
-
-.portfolio {
-    background:   linear-gradient(rgba(0, 0, 0, .45), rgba(220,73,58, 0.45)),
-    url(https://image.freepik.com/vector-gratis/fondo-borroso-colores-oscuros_1159-757.jpg);
-    background-size: cover;
-
-}
-
-.portfolio .hero {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 140px 0 120px;
-    position: relative;
-    z-index: 1;
-    margin-bottom: 25px;
-}
-.m_html img {
-    border-style: solid;
-    border-width: 0;
-}
-
-.portfolio .paint-stroke {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-    background: url(https://i.imgur.com/JSbX6iz.png) bottom center no-repeat;
-    height: 100px;
-}
-
-/* Navigation */
-
-.navbar {
-    height: 100px;
-    background: transparent;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: 9999999;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 13px;
-    transition: 220ms all ease-in-out;
-    align-items: center;
-}
-.navbar .inner {
-    max-width: 1170px;
-    margin: 0 auto;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 100%;
-}
-.navbar .inner .left {
-    text-align: center;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: flex;
-    align-items: center;
-}
-
-.navbar .inner .left ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    transition: 600ms height ease-in-out, 600ms background ease-in-out;
-    text-align: center;
-}
-.navbar .inner .left ul li a:hover {
-    color: #FE6847;
-    transition: 600ms height ease-in-out, 600ms background ease-in-out;
-}
-
-.navbar .inner ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-.navbar .inner ul li {
-    position: relative;
     display: table-cell;
     vertical-align: middle;
     text-align: center;
     margin: auto;
-}
-.navbar .inner ul li a {
-    display: block;
-    text-decoration: none;
-    padding: 14px 16px;
-    transition: 180ms all ease-in-out;
-    font-family: 'Oswald', sans-serif;
+    width: 100%;
+    font-family: 'Thasadith', sans-serif;
+    color: #fff;
+    font-size: 88px;
+    font-weight: normal;
     text-transform: uppercase;
-    font-size: 32px;
-    margin-left: 120px;
-    line-height: normal;
-    color: #a7b0bb;
 
 }
 
-.opaque-bg {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 380px;
-    padding: 1px 1px 5px 5px;
+h1 smallText {
+    display: block;
+    text-transform: lowercase;
+    color: #fff;
+    font-size: 28px;
+    margin-top: 20px;
 }
 
-.aboutme p {
-    color: white;
-    font-weight: 100;
-    font-size: 72px;
+#typed {
+    display: block;
+    text-transform: lowercase;
+    color: #fff;
+    font-size: 28px;
+    margin-top: 20px;
 }
-
-.blinking-cursor {
-    font-weight: 500;
-    margin-left: 4px;
-    font-size: 20px;
-    color: white !important;
-    -webkit-animation: 1s blink step-end infinite;
-    -moz-animation: 1s blink step-end infinite;
-    -ms-animation: 1s blink step-end infinite;
-    -o-animation: 1s blink step-end infinite;
-    animation: 1s blink step-end infinite;
-}
-

@@ -14,12 +14,4 @@ The photo below was taken on 12/18/18, and may be inaccurate.
 This image will be updated throughout time as I continuously update my portfolio,
 but this is the last known update.
 
-![alt text](https://i.imgur.com/yyuKPEJ.png)
-
-# TODO
-
-### General
- * Complete the site
- * Make website user friendly
- * Total Overhaul
- * Add Typed.js [@mm909](https://github.com/mm909)
+![alt text](https://i.imgur.com/OgRIrbl.png)
