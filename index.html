@@ -12,33 +12,174 @@
     <script type="text/javascript"
             src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="javascript/typed.js"></script>
 </head>
 
 <body>
 
-    <h1>
-        <div class="opaque-bg animated fadeInDown">
-         Alex Codes
-            <smallText>
-             <br>
-                <span id="message"></span>
-            </smallText>
-        </div>
-        <br>
-
-        <smallText>
-            <a href="/projects.html">
-                <smallText>
-                    Projects
-                </smallText>
-            </a>
+<h1>
+    <div class="opaque-bg animated fadeInDown">
+        Alex Codes
+        <smallText style="text-transform: none;">
+            <br>
+            <span id="message"></span>
         </smallText>
-        <copyright>
-            © 2019 ShadyAlexCodes
-            <br>All Rights Reserved
-        </copyright>
-    </h1>
+    </div>
+    <br>
+    <extraSmallText>
+        Projects
+    </extraSmallText>
+
+    <projectSize>
+    <span class="blank_dot">
+        <a href="#" onclick="swal({
+            title: 'Portfolio',
+            text: 'I am a developer and musician based in Nevada. I love what I do, and adore the creative process; it can be considered addictive with endless possibilities.',
+            icon: 'https://imgur.com/OgRIrbl.png',
+            closeOnClickOutside: true,
+            background: 'transparent',
+            buttons: {
+                Demo: {
+                    text: 'Demo',
+                    value: true,
+                    visible: true,
+
+                },
+                Code: {
+                    text: 'Code',
+                    value: false,
+                    visible: true,
+
+                }
+            },
+        }).then(function(value) {
+                if(value) {
+                    window.location.href = 'https://shadyalexcodes.com/';
+                } else if(value == false) {
+
+                swal('Warning', 'This code is not for public usage!', 'error');
+                }
+
+
+            });">
+            <p class="dotnumber">
+             1
+            </p>
+        </a>
+    </span>
+        <span class="blank_dot">
+            <a href="#" onclick="swal({
+            title: 'Holiday Calendar',
+            text: 'A christmas coding challenge calendar, with answering system. Complete daily activities on the tree, and get all the way to day 31!',
+            icon: 'https://imgur.com/3GM2UvE.png',
+            closeOnClickOutside: true,
+            buttons: {
+                Demo: {
+                    text: 'Demo',
+                    value: true,
+                    visible: true,
+
+                },
+                Code: {
+                    text: 'Code',
+                    value: false,
+                    visible: true,
+
+                }
+            },
+        }).then(function(value) {
+                if(value) {
+                    window.location.href = 'https://shadyalexcodes.com/Holiday-Calendar';
+                } else if(value == false) {
+                    window.location.href = 'https://github.com/ShadyAlexCodes/Holiday-Calendar';
+                }
+
+
+            });">
+            <p class="dotnumber">
+            2
+            </p>
+        </a>
+    </span>
+        <span class="blank_dot">
+            <a href="#" onclick="swal({
+            title: 'Particles.js',
+            text: 'A lightweight JavaScript library for creating moving particles. Users are able to interact with these particles pulling them closer, or pushing them away.',
+            icon: 'https://imgur.com/Fzlve5I.png',
+            closeOnClickOutside: true,
+            background: 'transparent',
+            buttons: {
+                Demo: {
+                    text: 'Demo',
+                    value: true,
+                    visible: true,
+
+                },
+                Code: {
+                    text: 'Code',
+                    value: false,
+                    visible: true,
+
+                }
+            },
+        }).then(function(value) {
+                if(value) {
+                    window.location.href = 'https://shadyalexcodes.com/Particles';
+                } else if(value == false) {
+                    window.location.href = 'https://github.com/ShadyAlexCodes/Particles';
+                }
+
+
+            });">
+            <p class="dotnumber">
+            3
+            </p>
+        </a>
+    </span>
+        <span class="blank_dot">
+            <a href="#" onclick="swal({
+            title: 'SweetAlerts.js',
+            text: 'A lightweight JavaScript library that replaces the original javascript alert messages.',
+            icon: 'https://imgur.com/Jxg7REM.png',
+            closeOnClickOutside: true,
+            buttons: {
+                Demo: {
+                    text: 'Demo',
+                    value: true,
+                    visible: true,
+
+                },
+                Code: {
+                    text: 'Code',
+                    value: false,
+                    visible: true,
+
+                }
+            },
+        }).then(function(value) {
+                if(value) {
+                    window.location.href = 'https://shadyalexcodes.com/SweetAlerts';
+                } else if(value == false) {
+                    window.location.href = 'https://github.com/ShadyAlexCodes/SweetAlerts';
+                }
+
+
+            });">
+            <p class="dotnumber">
+            4
+            </p>
+        </a>
+    </span>
+    </projectSize>
+    <copyright style="   position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px; ">
+        © 2019 ShadyAlexCodes
+        <br>All Rights Reserved
+    </copyright>
+</h1>
 
 </body>
 </html>
