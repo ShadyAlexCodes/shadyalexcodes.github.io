@@ -5,7 +5,7 @@
 
 body, html {
     font-family: 'Thasadith', sans-serif;
-    background-color: #eff4fa; /*  Background color must be the same as paint stroke color, otherwise these offset */
+    background-color: #eff4fa;
     height: 100%;
     text-align: center;
 }
