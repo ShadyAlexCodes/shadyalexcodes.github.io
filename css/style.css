@@ -67,13 +67,6 @@ h1 extraSmallText {
     color: #fff;
     font-size: 18px;
 }
-h1 projectSize {
-    display: block;
-    text-transform: uppercase;
-    color: #fff;
-    font-size: 26px;
-}
-
 
 h2{
     text-transform: lowercase;
