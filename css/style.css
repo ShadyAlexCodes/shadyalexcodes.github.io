@@ -12,16 +12,16 @@ body, html {
 
 body {
     display: table;
-    width: 100%;
-    margin: 0;
-    background-image: url(https://i.imgur.com/uNQ5exz.jpg);
-    background-size: cover;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+width: 100%;
+margin: 0;
+background-image: url(https://i.imgur.com/uNQ5exz.jpg);
+background-size: cover;
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
 }
 
 a {
