@@ -107,3 +107,7 @@ h1 copyright {
     justify-content: center;
     margin-top: 25px;
 }
+.swal-text {
+    font-size: 21px;
+    font-weight: 500;
+}
