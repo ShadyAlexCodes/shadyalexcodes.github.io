@@ -32,6 +32,10 @@ a {
     transition: 100ms height ease-in-out, 100ms background ease-in-out;
 }
 
+a:hover {
+    color: #DD2D4A;
+    transition: 100ms height ease-in-out, 100ms background ease-in-out;
+}
 
 
 canvas {
@@ -61,56 +65,18 @@ h1 smallText {
     font-size: 28px;
     margin-top: 20px;
 }
-h1 extraSmallText {
-    display: block;
-    text-transform: uppercase;
-    color: #fff;
-    font-size: 18px;
-}
-h1 projectSize {
-    display: block;
-    text-transform: uppercase;
-    color: #fff;
-    font-size: 26px;
-}
 
-
-h2{
-    text-transform: lowercase;
-    color: #fff;
-    font-size: 18px;
-    margin-top: 20px;
-}
 h1 copyright {
     display: block;
     color: #fff;
     opacity: 0.2;
     font-size: 15px;
-    bottom:0;
 }
 
-.blank_dot {
-    height: 75px;
-    width: 75px;
-    background-color: transparent;
+#typed {
+    display: block;
+    text-transform: lowercase;
     color: #fff;
-    font-size: 42px;
-    border-radius: 50%;
-    display: inline-block;
-    flex-direction: column;
-    margin-left: 20px;
-    margin-right: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
-    transition: 100ms height ease-in-out, 100ms background ease-in-out;
-}
-
-.blank_dot:hover {
-    background-color: #FF3562;
-    transition: 100ms height ease-in-out, 100ms background ease-in-out;
-}
-.dotnumber {
-    font-size: 24px;
-    font-family: 'Thasadith', sans-serif;
-    justify-content: center;
-    margin-top: 25px;
+    font-size: 28px;
+    margin-top: 20px;
 }
