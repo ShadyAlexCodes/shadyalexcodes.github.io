@@ -111,26 +111,170 @@ h1 copyright {
     font-size: 21px;
     font-weight: 500;
 }
+.sweet-alert.sweetalert-lg { width: 600px; }
+/*
+        * Devices 1 *
+  - Mobile Devices (320px to 667px)
+  - Tested on versions iPhone 6 through X
+*/
 
-@supports (-webkit-overflow-scrolling: touch) {
-  /* CSS specific to iOS devices */ 
+/* Portrait and Landscape */
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 667px)
+and (-webkit-min-device-pixel-ratio: 2) {
+    a {
+        font-size: 52px;
+    }
+
     h1 {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-    margin: auto;
-    width: 100%;
-    font-family: 'Thasadith', sans-serif;
-    color: #fff;
-    font-size: 150px;
-    font-weight: normal;
-    text-transform: uppercase;
+        font-size: 150px;
+    }
 
+    h1 smallText {
+        font-size: 50px;
+    }
+
+    h1 extraSmallText {
+        font-size: 30px;
+    }
+
+    h1 copyright {
+        font-size: 20px;
+    }
+
+    .blank_dot {
+        height: 145px;
+        width: 140px;
+        background-color: transparent;
+        color: #fff;
+        border-radius: 50%;
+    }
+
+    .dotnumber {
+        font-size: 58px;
+        font-family: 'Thasadith', sans-serif;
+        justify-content: center;
+        margin-top: 35px;
+    }
+
+    .swal-modal {
+        width: 850px;
+    !important;
+    }
+
+    .swal-icon--custom {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        border: none;
+        border-radius: 0;
+    }
+
+    .swal-icon {
+
+        position: relative;
+        box-sizing: content-box;
+        margin: 20px auto;
+    }
+
+    .swal-title {
+        font-size: 47px;
+    }
+
+    .swal-text {
+        font-size: 28px;
+        font-weight: 500;
+    }
+
+    .swal-button {
+        background-color: #7cd1f9;
+        color: #fff;
+        border: none;
+        box-shadow: none;
+        border-radius: 10px;
+        font-weight: 600;
+        font-size: 28px;
+        padding: 20px 44px;
+        margin: 0;
+        cursor: pointer;
+    }
 }
 
-    
-}
+    @media only screen
+    and (min-device-width: 768px)
+    and (max-device-width: 1024px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+        a {
+            font-size: 42px;
+        }
 
-@supports not (-webkit-overflow-scrolling: touch) {
-  /* CSS for other than iOS devices */ 
-}
+        h1 {
+            font-size: 130px;
+        }
+        h1 smallText {
+            font-size: 40px;
+        }
+        h1 extraSmallText {
+            font-size: 20px;
+        }
+        h1 copyright {
+            font-size: 15px;
+        }
+
+        .blank_dot {
+            height: 145px;
+            width: 140px;
+            background-color: transparent;
+            color: #fff;
+            border-radius: 50%;
+        }
+
+        .dotnumber {
+            font-size: 58px;
+            font-family: 'Thasadith', sans-serif;
+            justify-content: center;
+            margin-top: 35px;
+        }
+
+        .swal-modal {
+            width: 850px; !important;
+        }
+        .swal-icon--custom {
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            border: none;
+            border-radius: 0;
+        }
+
+        .swal-icon {
+
+            position: relative;
+            box-sizing: content-box;
+            margin: 20px auto;
+        }
+
+        .swal-title {
+            font-size: 47px;
+        }
+        .swal-text {
+            font-size: 28px;
+            font-weight: 500;
+        }
+
+        .swal-button {
+            background-color: #7cd1f9;
+            color: #fff;
+            border: none;
+            box-shadow: none;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 28px;
+            padding: 20px 44px;
+            margin: 0;
+            cursor: pointer;
+        }
+
+    }
+
