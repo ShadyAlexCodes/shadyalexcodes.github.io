@@ -111,3 +111,26 @@ h1 copyright {
     font-size: 21px;
     font-weight: 500;
 }
+
+@supports (-webkit-overflow-scrolling: touch) {
+  /* CSS specific to iOS devices */ 
+    h1 {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    font-family: 'Thasadith', sans-serif;
+    color: #fff;
+    font-size: 150px;
+    font-weight: normal;
+    text-transform: uppercase;
+
+}
+
+    
+}
+
+@supports not (-webkit-overflow-scrolling: touch) {
+  /* CSS for other than iOS devices */ 
+}
