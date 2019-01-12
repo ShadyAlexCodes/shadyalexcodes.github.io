@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/calendarcode.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+<header><a href="/">Return to portfolio</a></header>
+<div class="projectTitle">
+    Holiday Calendar
+</div>
+<div class="projectInformation">
+    <div class="paragraph">
+        <div class="paragraphCode">
+            <br>
+            <a href="#projectImage">
+            <img style="height: 85px; width: 85px; border-radius: 50%;" src="https://imgur.com/XZBuMm0.png">
+        </a>
+            <div class="paragraphTitle">
+                The concept
+            </div>
+                <br>
+            <div class="paragraphText">
+                When the Holiday's come around families across the world are purchasing often Holiday Advent Calendars.
+                <br>
+                This project brings the calendar to you, and introduces holiday activities for all ages!
+                <br>
+                (Click the christmas tree!)
+            </div>
+                <br>
+                <br>
+                <br>
+            <div class="paragraphTitle">
+                The Building Process
+            </div>
+                <br>
+            <div class="paragraphText">
+                The inspiration for this idea came from a neighbor who had bought one for themselves,
+                <br>
+                and I began to look at other projects such as <a href="https://www.homestoriesatoz.com/wp-content/uploads/2017/11/Christmas-Advent-Countdown-Ideas-Upcycled-Tin-Can-by-Pillar-Box-Blue.jpg" style="color: #495867; font-size: 30px; font-weight: bold; text-transform: none;">this one.</a>
+                <br>
+                After much research, and feedback on the idea I began developing it.
+                <br>
+                <br>
+                The development of this project began with the dots
+                    <div class="paragraphCode">
+                        <span class="dot"></span>
+                        <br>
+                        < span class="dot" >< /span >
+                        <br>
+                        .dot {
+                        <br>
+                        height: 25px;
+                        <br>
+                        width: 25px;
+                        <br>
+                        background-color: #FF3562;
+                        <br>
+                        border-radius: 50%;
+                        <br>
+                        display: inline-block;
+                        }
+                    </div>
+                After being able to create the dots I wanted to arrange
+                <br>
+                them in the shape of a tree!
+                <br>
+                Eventually with the help of a friend I came up with the design below.
+                    <div class="paragraphCode">
+                        <span class="dot"></span>
+                        <br>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <br>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <br>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <br>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <br>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <br>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <br>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                After arranging the dots, I numbered them, and
+                <br>
+                began experimenting with different concepts to things to display these questions.
+                <br>
+                While browsing codepen I found the project <a href="https://codepen.io/gschier/pen/HCoqh" style="color: #495867; font-size: 30px; font-weight: bold; text-transform: none;">Lightbox.</a>
+                <br>
+                This soon displayed the question, and the `Answer Me!` questions for the project.
+                <br>
+                <br>
+                With the HTML and CSS part out of the way, I needed someway
+                <br>
+                for the users to respond to these questions. I created a Javascript answering system.
+                <br>
+                <br>
+                <div class="paragraphTitle">
+                    The Javascript
+                </div>
+                    <div class="paragraphCode">
+                        function answerClicked() {
+                        <br>
+                        var answer = document.getElementById('questionAnswer').value.toLowerCase();
+                        <br>
+                        var correctAnswers = ['vint cerf', 'robert e. kahn', 'robert kahn', 'print.ln("hello world!");',
+                        <br>
+                        '#003366', '003366', 'lossless', '1995', 'bill gates', 'september 4, 1998', '9/4/1998', '2004',
+                        ];
+
+                        <br>
+                        if(correctAnswers.includes(answer)) {
+                        <br>
+                        swal("Great job!", "You got the question correct! Click 'Tis the season to get to the main page!", "success");
+                        <br>
+                        } else {
+                        <br>
+                        swal("Awww man!", "You got the question wrong!", "error");
+                        <br>
+                        }
+                        };
+                    </div>
+                When the user responds to a question it'll run function `answerClicked();`
+                <br>
+                This function ran through a pre-created array list to see if the user
+                <br>
+                response was equal to one of the ones in the list. Then responded
+                <br>
+                to the user telling them if they were right or wrong.
+                <br>
+                <br>
+
+                <a href="https://github.com/ShadyAlexCodes/Holiday-Calendar" style="color: #495867; font-size: 30px; font-weight: bold; text-transform: none;">Find the code Here!</a>
+
+                <br>
+                <copyright style="font-size: 15px; bottom:0; width:100%; height:60px; ">
+                    © 2019 ShadyAlexCodes
+                    <br>All Rights Reserved
+                </copyright>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<br>
+<a href="#_" class="lightbox" id="projectImage">
+    <img src="https://imgur.com/3GM2UvE.png">
+</a>
+
+
+<span class="github_button">
+    <a href="#" onclick="swal({
+            title: 'Warning',
+            text: 'You are about to be redirected to another page, but before continuing we wanted to make sure you were okay with this!',
+            icon: 'warning',
+                }).then(function(value) {
+                    if(value) {
+                        window.location.href = 'https://shadyalexcodes.com/';
+                    } else if(value == false) {
+                        swal('Warning', 'You will not be redirected!', 'error');
+                    }
+                });">
+        <img src="https://avatars0.githubusercontent.com/u/45239432?s=460&v=4">
+    </a>
+</span>
+
+</body>
+</html>

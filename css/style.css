@@ -112,17 +112,20 @@ h1 copyright {
     font-weight: 500;
 }
 .sweet-alert.sweetalert-lg { width: 600px; }
+
+
 /*
-        * Devices 1 *
+        * Mobile Compatibility (Portrait) *
   - Mobile Devices (320px to 667px)
   - Tested on versions iPhone 6 through X
 */
 
-/* Portrait and Landscape */
 @media only screen
 and (min-device-width: 375px)
 and (max-device-width: 667px)
-and (-webkit-min-device-pixel-ratio: 2) {
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+
     a {
         font-size: 52px;
     }
@@ -200,6 +203,8 @@ and (-webkit-min-device-pixel-ratio: 2) {
         cursor: pointer;
     }
 }
+
+
 
     @media only screen
     and (min-device-width: 768px)

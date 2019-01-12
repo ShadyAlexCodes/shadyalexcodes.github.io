@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css?family=Thasadith');
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+
+/* Body, Header, A */
+body {
+    display: table;
+    width: 100%;
+    margin: 0;
+    background-color: #eff4fa;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    width: 100%;
+    margin: 0;
+}
+body, html {
+    font-family: 'Thasadith', sans-serif;
+    background-color: #eff4fa;
+    height: 100%;
+    text-align: center;
+}
+header {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    line-height: 115px;
+    height: 88px;
+    background: #495867;
+    color: #fff;
+    margin-top: -25px;
+}
+a {
+    font-size: 21px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #eff4fa;
+    transition: 100ms height ease-in-out, 100ms background ease-in-out;
+}
+a:hover {
+    font-size: 21px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #9BA3AC;
+    transition: 100ms height ease-in-out, 100ms background ease-in-out;
+}
+
+/* Project */
+
+.projectTitle {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 135px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #495867;
+    display: flex;
+    justify-content: center;
+    background-color: #eff4fa;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.projectInformation {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.paragraph {
+    width: 1600px;
+    font-family: 'Thasadith', sans-serif;
+}
+
+.paragraphText {
+    color: #3C4955;
+    font-size: 30px;
+}
+.paragraphTitle {
+    color: #3C4955;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.paragraphCode {
+    background-color: rgba(60, 73, 85, 0.1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* Github, Lightbox, Scroll, Pulse */
+
+.github_button {
+    font-family: 'Thasadith', sans-serif;
+    position: fixed;
+    bottom: 0px;
+    right: 8px;
+}
+
+.github_button img {
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #eff4fa;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #3C4955;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    top: 0;
+    left: 0;
+
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 80%;
+    margin-top: -105px;
+    padding-top: 200px;
+
+}
+
+.lightbox:target {
+    outline: none;
+    display: block;
+}
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: #FF3562;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+
+/*
+        * Mobile Compatibility (Portrait) *
+  - Mobile Devices (320px to 667px)
+  - Tested on versions iPhone 6 through X
+*/
+
+@media only screen
+and (min-device-width: 375px)
+and (max-device-width: 667px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+    header {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        line-height: 115px;
+        height: 105px;
+        background: #495867;
+        color: #fff;
+        margin-top: -15px;
+    }
+
+    a {
+        font-size: 52px;
+    }
+
+    .projectTitle {
+        font-family: 'Shadows Into Light', cursive;
+        font-size: 185px;
+        font-weight: normal;
+        text-transform: uppercase;
+        color: #495867;
+        display: flex;
+        justify-content: center;
+        background-color: #eff4fa;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    }
+    .paragraph {
+        width: 1500px;
+        font-family: 'Thasadith', sans-serif;
+    }
+    .paragraphText {
+        color: #3C4955;
+        font-size: 55px;
+    }
+
+    .paragraphTitle {
+        color: #3C4955;
+        font-size: 65px;
+        font-weight: bold;
+    }
+
+    .swal-modal {
+        width: 850px;
+    !important;
+    }
+
+    .swal-icon--custom {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        border: none;
+        border-radius: 0;
+    }
+
+    .swal-icon {
+
+        position: relative;
+        box-sizing: content-box;
+        margin: 20px auto;
+    }
+
+    .swal-title {
+        font-size: 47px;
+    }
+
+    .swal-text {
+        font-size: 28px;
+        font-weight: 500;
+    }
+
+    .swal-button {
+        background-color: #7cd1f9;
+        color: #fff;
+        border: none;
+        box-shadow: none;
+        border-radius: 10px;
+        font-weight: 600;
+        font-size: 28px;
+        padding: 20px 44px;
+        margin: 0;
+        cursor: pointer;
+    }
+}
