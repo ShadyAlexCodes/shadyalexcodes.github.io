@@ -11,8 +11,7 @@ body {
   -khtml-user-select: none; /* Konqueror HTML */
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* Internet Explorer/Edge */
-  height: 100%;
-    background-color: #212121;
+  background-color: #212121;
 }
 h1 {
   color: transparent;
